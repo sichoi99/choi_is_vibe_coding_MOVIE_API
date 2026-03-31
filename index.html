@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Now Playing Movies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">CHOI'S CHOICE</div>
+        <div class="topbar-copy">LOGIN</div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">TMDB Movie 활용한 영화 추천 서비스</p>
+        <h1>현재 상영중인 영화를 한눈에</h1>
+        <p class="hero-description">
+          현재 상영중인 영화를 한눈에 볼 수 있습니다.
+        </p>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section-heading">
+        <h2>Now Playing</h2>
+        <p>극장에서 상영 중인 영화를 확인해보세요.</p>
+      </section>
+
+      <section id="movie-grid" class="movie-grid" aria-live="polite">
+        <div class="status-card">영화 정보를 불러오는 중입니다...</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
